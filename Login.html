@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" href="form.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* margin-top: 8%; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: navy;
+            border-radius: 20px solid red;
+            border: 4px solid gray;
+            /* margin-left: 100px;
+            margin-right: 100px; */
+            background-color: rgb(219, 232, 232);
+            height: 100vh;
+        }
+
+        .submitbutton {
+            margin-right: 75px;
+            margin-bottom: 30px;
+            font-size: 20px;
+            padding: 7px 15px;
+            background-color: rgb(145, 108, 180);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-right: 75px;
+            margin-left: 7%;
+        }
+
+        .set {
+            font-size: 15px;
+            padding: 7px 15px;
+            background-color: rgb(145, 108, 180);
+            color: white;
+            border: none;
+        }
+
+        input {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome To Quize App</h1>
+        <input type="text" name="username" id="userinput" placeholder="Enter Your Name">
+        <br><br>
+        <button onclick="submituser()" class="submitbutton">Submit</button>
+        <div>
+            <a href="index.html"><button class="set">SET A</button></a>
+            <a href="setB.html"><button class="set">SET B</button></a>
+            <a href="setC.html"><button class="set">SET C</button></a>
+        </div>
+        <script src="newscript.js"></script>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>
